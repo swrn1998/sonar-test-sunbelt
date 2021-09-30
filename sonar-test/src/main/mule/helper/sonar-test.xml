@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ceb03c57-7c44-4b3b-9291-82bfd5e1aaf9" basePath="/" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="sonar-testFlow" doc:id="62d43038-38ee-47d2-943c-7920e35c8377" >
+		<http:listener doc:name="Listener" doc:id="33c2ad8a-3a8a-4d8f-a778-d0f24ec9653b" config-ref="HTTP_Listener_config" path="api"/>
+		<set-payload value='"sonar"' doc:name="Set Payload" doc:id="eb74fe6a-fca4-4678-8851-b3d723767b79" />
+		<logger level="INFO" doc:name="Logger" doc:id="8e67216f-977b-4c49-8497-69075dea1ba9" message='"sonar logger"'/>
+	</flow>
+</mule>
