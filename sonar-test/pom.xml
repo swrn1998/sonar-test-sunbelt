@@ -159,27 +159,27 @@
 			<layout>default</layout>
 		</repository>
 		<repository>
-			<id>API-New</id>
-			<url>https://pkgs.dev.azure.com/SunbeltMobile/SunbeltMule/_packaging/API-New/maven/v1</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
+  <id>API-New</id>
+  <url>https://pkgs.dev.azure.com/niksoni/nikproject/_packaging/API-New/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
 		</repositories>
 	<distributionManagement>
 		<repository>
-			<id>API-New</id>
-			<url>https://pkgs.dev.azure.com/SunbeltMobile/SunbeltMule/_packaging/API-New/maven/v1</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
+  <id>API-New</id>
+  <url>https://pkgs.dev.azure.com/niksoni/nikproject/_packaging/API-New/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
 	</distributionManagement>
 	<pluginRepositories>
 		<pluginRepository>
